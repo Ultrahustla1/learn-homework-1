@@ -18,9 +18,9 @@ students_scores = [
 students_average_score = []
 
 def main():
-  for s in students_scores:
-      students_average_score.append(sum(s['scores'])/len(s['scores']))
-      print(f"Средняя оценка для класса {s['school_class']} : {(sum(s['scores']) / len(s['scores']))}")
+  for score in students_scores:
+      students_average_score.append(sum(score['scores'])/len(score['scores']))
+      print(f"Средняя оценка для класса {score['school_class']} : {(sum(score['scores']) / len(score['scores']))}")
 
   school_average_score = sum(students_average_score)/len(students_average_score)
   print(f"Средняя оценка по школе: {school_average_score}")
