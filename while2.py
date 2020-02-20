@@ -14,12 +14,18 @@
     Программа: Программирую
     
 """
+question = {'Как дела?': 'Хорошо!', 'Что делаешь?': 'Программирую'}
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+  while True:
+    user_say = input('Пользователь: ')
+    if user_say == "Как дела?":
+        print(question['Как дела?'])
+    elif user_say == "Что делаешь?":
+        print(question['Что делаешь?'])
+    else:
+        print('Нет ответа')
+        break
     
 if __name__ == "__main__":
     ask_user()
